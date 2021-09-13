@@ -1,0 +1,120 @@
+@import url(responsive.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #EEE;
+}
+.container {
+   max-width: 1000px;
+   background: #E4F9F5;
+   margin: 0 auto;
+   padding: 20px;
+}
+header {
+    display: flex;
+}
+.header-img{
+    width: 100px;
+    height: 120px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+header .header-name {
+    padding: 1.8rem;
+    flex-grow: 3;
+}
+.header-contact {
+  flex-grow: .5;
+  align-self: center;
+}
+.header-contact a{
+    display: block;
+    text-decoration: none;
+    color:#11999e;
+    padding: .1rem 0;
+}
+.header-contact a:hover{
+    color: #8e44ad;
+    text-decoration: underline;
+}
+h1, h2,h3,h4, h5, h6 {
+    color: #11999e;
+}
+hr{
+    border: 3px solid #34495e;
+    margin: 1rem 0;
+}
+
+/* Personal section start  */
+.content {
+    display: flex;
+}
+.left-side {
+    flex-basis: 30%;
+}
+.right-side {
+    flex-basis: 70%;
+}
+.common-hr{
+    border: 2px solid #33395e;
+    margin: 1.2rem 0;
+    border-bottom: none;
+    width: 100%;
+}
+.right-side .right-content {
+    margin:.5rem 0;
+    
+}
+/* Education Start  */
+#education-section .right-side {
+    display: flex;
+}
+#education-section .left-content,
+#education-section .right-content
+{
+    padding: 0 15px;
+    width: 50%;
+}
+#education-section .left-div{
+    margin-bottom: 2rem;
+}
+/* Education End  */
+
+/* footer section start  */
+footer {
+    background: #11999e;
+    color: #fff;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+
+}
+footer a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 20px;
+    color: #fff;
+    margin-top: 15px;
+}
+footer>p{
+    text-align: left;
+    margin-left: 20px;
+}
+/* footer section end  */
+
+@media screen and (max-width: 600px) {
+    footer a{
+        display: block;
+    }
+    footer > p{
+        font-size: 12px;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
